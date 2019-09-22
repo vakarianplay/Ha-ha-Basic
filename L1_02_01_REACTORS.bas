@@ -1,10 +1,4 @@
-'......EXE SNODU......
-'sys09¶°30×9Ò³ÚÐûÂ¿´Ç102802605¶°±¿ÇÁ78900%½°%8430032
-'
-'_Gruppa_______F.I.O.___________N__
-'
-'  XX-13 txw   ......
-'
+
 DECLARE SUB FDY (t!, CY!(), FC!(), NE%)
 DEFINT I-K, M-N
 INPUT "N="; N
