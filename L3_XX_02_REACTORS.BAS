@@ -14,14 +14,11 @@ NEXT j
 ip = 0
 X = 0!
 
-PRINT "  X        ARRAY Y"
+PRINT "  X        ARRAY Y",
 S99:
-'Ca = 1 * EXP((-0.5) * X)
-
 PRINT USING "##.####"; X;
 FOR j = 1 TO N
     PRINT USING "##.####"; Y(j);
-    ' PRINT USING "##.####"; Ca;
 NEXT j
 PRINT
 S100:
@@ -47,14 +44,14 @@ FOR j = 1 TO N
     PRINT "X="; X; "Y("; j; ")="; Y(j);
 NEXT j
 PRINT
-
 END
 '..........PODPROGRAMMA......
 
 SUB FDY (t, CY(), FC(), NE)
 
-    FC(1) = 2.34 * CY(1) - 0.929 * CY(2)
-    FC(2) = (2.34 * CY(1) - 0.925 * CY(2)) * ((0.1 ^ 2 * 3.14) / 4) * 1.4
+    FC(1) = (-2.34 * CY(1)) / 45.49
+    FC(2) = (2.34 * CY(1) - 0.93 * CY(2)) / 45.49
+
 
 END SUB
 
